@@ -7,7 +7,7 @@ import { errorToast, successToast } from "../../toast/NotificationToast";
 import { showConfirmAlert } from "../../sweetAlert/ConfirmAlert";
 import "sweetalert2/dist/sweetalert2.min.css";
 
-import { useFetch } from "../../hook/useFetch";
+import { useFetch } from "../../hook/UseFetch.js";
 import { AuthenticationContext } from "../../services/auth.context";
 
 const UsersTable = () => {

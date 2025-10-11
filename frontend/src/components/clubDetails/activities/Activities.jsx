@@ -9,7 +9,7 @@ import {
 import { Link, useNavigate } from "react-router";
 import ReviewForm from "../Reviews/ReviewForm";
 import PastActivity from "./PastActivity";
-import { useFetch } from "../../hook/useFetch";
+import { useFetch } from "../../hook/UseFetch.js";
 import { AuthenticationContext } from "../../services/auth.context";
 import { errorToast, successToast } from "../../toast/NotificationToast";
 

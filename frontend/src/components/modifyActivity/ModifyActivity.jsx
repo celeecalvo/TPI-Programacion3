@@ -1,6 +1,6 @@
 import React, {useState, useEffect, useContext} from 'react'
 import { useNavigate, useParams } from 'react-router';
-import { useFetch } from '../hook/useFetch';
+import { useFetch } from '../hook/UseFetch.js';
 import ActivityForm from '../activityForm/ActivityForm';
 
 import { AuthenticationContext } from '../services/auth.context';

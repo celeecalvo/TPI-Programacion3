@@ -8,7 +8,7 @@ import Search from "../search/Search";
 import Profile from "../profile/Profile";
 import FooterSmall from "../footer/FooterSmall";
 
-import { useFetch } from "../hook/useFetch";
+import { useFetch } from "../hook/UseFetch.js";
 import Loading from "../error/loading/Loading";
 import DiscoverClubs from "../discoverClubs/DiscoverClubs";
 

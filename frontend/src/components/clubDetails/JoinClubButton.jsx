@@ -1,7 +1,7 @@
 import React, { useContext, useState, useEffect } from "react";
 import { AuthenticationContext } from "../services/auth.context";
 import { useNavigate } from "react-router";
-import { useFetch } from "../hook/useFetch";
+import { useFetch } from "../hook/UseFetch.js";
 import { successToast, errorToast, infoToast } from "../toast/NotificationToast";
 
 const JoinClubButton = ({ clubId, onJoinChange }) => {

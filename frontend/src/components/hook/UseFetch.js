@@ -3,7 +3,7 @@ import { useState } from "react";
 const API_URL = import.meta.env.VITE_BASE_SERVER_URL;
 
 export const useFetch = (endpoint) => {
-  const complete_url = `${API_URL}${endpoint}`;
+  const complete_url = `${API_URL.replace(/\/$/, "")}${endpoint}`;
   const [isLoading, setIsLoading] = useState(true);
 
   const getAll = async (token = null) => {

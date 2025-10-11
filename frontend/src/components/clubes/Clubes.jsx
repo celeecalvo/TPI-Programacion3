@@ -6,7 +6,7 @@ import ClubList from "../clubList/ClubList";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import { faPlus } from "@fortawesome/free-solid-svg-icons";
 
-import { useFetch } from "../hook/useFetch";
+import { useFetch } from "../hook/UseFetch.js";
 import { AuthenticationContext } from "../services/auth.context";
 
 /* Acá se visualizarán todos los clubes,

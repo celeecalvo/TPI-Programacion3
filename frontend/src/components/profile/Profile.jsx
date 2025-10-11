@@ -8,7 +8,7 @@ import ClubsTable from "./AdminManagement/ClubsTable"; // tabla de clubes
 import ProfileForm from "./profileForm/ProfileForm";
 import Loading from "../error/loading/Loading";
 
-import { useFetch } from "../hook/useFetch";
+import { useFetch } from "../hook/UseFetch.js";
 import { AuthenticationContext } from "../services/auth.context";
 
 /* Renderiza perfiles dependiendo de ROL de USUARIO */

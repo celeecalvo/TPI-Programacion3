@@ -4,7 +4,7 @@ import LeftNav from "../nav/LeftNav";
 import ClubList from "../clubList/ClubList";
 
 import Loading from "../error/loading/Loading";
-import { useFetch } from "../hook/useFetch";
+import { useFetch } from "../hook/UseFetch.js";
 
 import { AuthenticationContext } from "../services/auth.context";
 

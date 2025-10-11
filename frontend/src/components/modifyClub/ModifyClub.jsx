@@ -1,7 +1,7 @@
 import React, {useState, useEffect} from 'react'
 import ClubForm from '../clubForm/ClubForm';
 import { useNavigate, useParams } from 'react-router';
-import { useFetch } from '../hook/useFetch';
+import { useFetch } from '../hook/UseFetch.js';
 
 const ModifyClub = () => {
   const { put, getById } = useFetch("/clubs");

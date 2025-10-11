@@ -6,7 +6,7 @@ import { Link, useNavigate } from "react-router";
 import { useState } from "react";
 import { errorToast, successToast } from "../toast/NotificationToast";
 
-import { useFetch } from "../hook/useFetch";
+import { useFetch } from "../hook/UseFetch.js";
 
 const Register = () => {
   const { post } = useFetch("/register");

@@ -3,7 +3,7 @@ import { useParams, useNavigate } from "react-router";
 import LeftNav from "../nav/LeftNav";
 import logo from "../../assets/img/logo/Logo-InkLink.webp";
 import NotFound from "../error/notFound/NotFound";
-import { useFetch } from "../hook/useFetch";
+import { useFetch } from "../hook/UseFetch.js";
 import Activities from "./activities/Activities";
 import Loading from "../error/loading/Loading";
 import JoinClubButton from "./JoinClubButton";

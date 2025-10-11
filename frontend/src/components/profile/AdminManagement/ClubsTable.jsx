@@ -4,7 +4,7 @@ import { faTrash, faFloppyDisk, faPenSquare } from "@fortawesome/free-solid-svg-
 import { Link } from 'react-router'
 
 import Search from "../../search/Search";
-import { useFetch } from "../../hook/useFetch";
+import { useFetch } from "../../hook/UseFetch.js";
 import { AuthenticationContext } from "../../services/auth.context";
 import { successToast, errorToast } from "../../toast/NotificationToast";
 import { showConfirmAlert } from "../../sweetAlert/ConfirmAlert";

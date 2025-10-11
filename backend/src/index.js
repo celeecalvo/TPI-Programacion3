@@ -21,11 +21,28 @@ import ReviewRatingRoutes from './routes/reviewRating.routes.js'
 dotenv.config();
 const app = express();
 
+const isProduction = process.env.NODE_ENV === "production";
+
+const allowedOrigins = isProduction
+  ? [
+      "https://tudominio.com",   // configurar DuckDNS
+      "https://www.tudominio.com",
+    ]
+  : ["http://localhost:5173"];
+
+// CORS dinámico
 app.use(cors({
-    origin: 'http://localhost:5173',
-    methods: ['GET', 'POST', 'PUT', 'DELETE'],
-    allowedHeaders: ['Content-Type', 'Authorization'],
+  origin: function (origin, callback) {
+    if (!origin || allowedOrigins.includes(origin)) {
+      callback(null, true);
+    } else {
+      console.warn(`Bloqueado por CORS: ${origin}`);
+      callback(new Error("No permitido por CORS"));
+    }
+  },
+  credentials: true,
 }));
+
 
 app.use(express.json());
 
@@ -38,8 +55,8 @@ try {
     app.use('/api', ClubRoutes);
     app.use('/api', ActivityRoutes);
     app.use('/api', ReviewRatingRoutes);
-    app.listen(port, () => {
-        console.log(`Corriendo servidor en http://localhost:${port}`);
+    app.listen(port, "127.0.0.1", () => {
+        console.log(`Corriendo servidor en puerto ${port}`);
     });
 
 } catch (error) {

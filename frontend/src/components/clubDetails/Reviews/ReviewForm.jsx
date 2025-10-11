@@ -3,7 +3,7 @@ import ReviewList from "./ReviewList";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import { faPaperPlane } from "@fortawesome/free-solid-svg-icons";
 
-import { useFetch } from "../../hook/useFetch";
+import { useFetch } from "../../hook/UseFetch.js";
 import { AuthenticationContext } from "../../services/auth.context";
 
 const ReviewForm = ({ activityId }) => {

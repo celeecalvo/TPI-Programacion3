@@ -4,7 +4,7 @@ import { validateString, validateEmail } from "../../auth/Auth.services";
 
 import logo from "../../../assets/img/logo/Logo-InkLink.webp";
 
-import { useFetch } from "../../hook/useFetch";
+import { useFetch } from "../../hook/UseFetch.js";
 import { AuthenticationContext } from "../../services/auth.context";
 
 const ProfileForm = ({ user, setUser, show, setShow }) => {

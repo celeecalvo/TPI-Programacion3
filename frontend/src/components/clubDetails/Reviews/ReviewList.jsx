@@ -8,7 +8,7 @@ import {
   faThumbsUp,
 } from "@fortawesome/free-solid-svg-icons";
 
-import { useFetch } from "../../hook/useFetch";
+import { useFetch } from "../../hook/UseFetch.js";
 import { AuthenticationContext } from "../../services/auth.context";
 import { errorToast, successToast } from "../../toast/NotificationToast";
 

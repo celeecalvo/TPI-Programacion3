@@ -1,7 +1,7 @@
 import React, { useContext } from "react";
 
 import { useNavigate, useParams } from "react-router";
-import { useFetch } from "../hook/useFetch";
+import { useFetch } from "../hook/UseFetch.js";
 import ActivityForm from "../activityForm/ActivityForm";
 import { errorToast } from "../toast/NotificationToast";
 

@@ -5,7 +5,7 @@ import FooterSmall from "../footer/FooterSmall";
 import logo from "../../assets/img/logo/Logo-InkLink.webp";
 import { errorToast, successToast } from "../toast/NotificationToast";
 
-import { useFetch } from "../hook/useFetch";
+import { useFetch } from "../hook/UseFetch.js";
 
 const ActivityForm = ({ mode = "create", initialData = {}, onSubmit }) => {
   const { getAll } = useFetch("/books");

@@ -1,6 +1,6 @@
 import React, { useContext } from "react";
 import ClubForm from "../clubForm/ClubForm";
-import { useFetch } from "../hook/useFetch";
+import { useFetch } from "../hook/UseFetch.js";
 import { useNavigate } from "react-router";
 import { AuthenticationContext } from "../services/auth.context";
 

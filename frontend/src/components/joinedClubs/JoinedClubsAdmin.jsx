@@ -9,7 +9,7 @@ import ClubList from "../clubList/ClubList";
 import Search from "../search/Search";
 import Loading from "../error/loading/Loading";
 import nadaAquiImage from "../../assets/img/error-img/nada-aqui.webp";
-import { useFetch } from "../hook/useFetch";
+import { useFetch } from "../hook/UseFetch.js";
 
 import { AuthenticationContext } from "../services/auth.context";
 
